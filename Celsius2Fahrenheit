@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+
+public class converting_celsius_to_fahreneheits {
+
+	public static void main(String[] args) {
+
+		System.out.print("How many degrees is it in Celcius?");
+		Scanner input = new Scanner(System.in);
+		double celcius = input.nextDouble();
+		
+		System.out.println("It is " + (((celcius*9)/5)+32) + " degrees Fahrenheit");
+		
+		
+	}
+
+}
