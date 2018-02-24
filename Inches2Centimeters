@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+
+public class converting_feet_and_inches_to_centimeters {
+
+	public static void main(String[] args) {
+
+		System.out.println("This program converts from feet and inches to centimeters.");
+		System.out.print("Number of feet?");
+		
+		Scanner input = new Scanner(System.in);
+		int firstUserInput = input.nextInt();
+		
+		System.out.print("Number of inches?");
+		int secondUserInput = input.nextInt();
+		
+		System.out.println("The corresponding length is " + (((firstUserInput * 12)+secondUserInput)*2.54));
+		
+	}
+
+}
