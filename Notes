@@ -1,0 +1,35 @@
+public class classnotes {
+
+	public static void main(String[] args) {
+	//for loop
+		// for(int <variable> = <initial>; <variable> <limit>; <variable> ++) {
+		// }
+		
+		//for(initialize; condition; update){
+		//}
+		
+		
+	//while loop
+		//while(condition) {
+		//}
+		
+		
+	//Scanners
+		// Scanner input = new Scanner(System.in);
+		//<integer> = input.nextInt();
+		
+		
+	//print
+		// System.out.println(<stuff>);
+		
+	
+	//Square root
+		//Math.sqrt();
+		
+		
+	//print
+		//sysout ctrl - space   =    System.out.println()
+
+	}
+
+}
