@@ -1,0 +1,63 @@
+class Circle {
+	double x = 0.0;
+	double y = 0.0;
+	double r = 1.0;
+	public Circle() {}
+	public Circle(double radius){
+		r = radius;
+	}
+	public Circle(double a, double b, double radius) {
+		x = a;
+		y = b;
+		r = radius;
+	}
+	double area() {
+		return Math.PI*(r*r);
+	}
+	double diameter() {
+		return (r*2);
+	}
+	double circumference() {
+		return Math.PI*(r*2);
+	}
+	double circleSum(Circle a, Circle b) {
+		return (a.area() + b.area());
+	}
+	double circleDifference(Circle a, Circle b) {
+		if ((double)a.area() >= (double)b.area()) {
+			return (double)(a.area() - b.area());
+		}
+		else {
+			return (double)(b.area() - a.area());
+		}
+	}
+	boolean circleCompare(Circle a, Circle b) {
+		if (a.area() > b.area()) {
+			return true;
+		}
+		else {
+			return false;
+		}
+	}
+}
+	
+class CircleDemo {
+	public static void main(String[] args){
+		Circle aCircle = new Circle();
+		System.out.println(aCircle.area());
+		Circle c = new Circle(0.0, 0.0, 10.0);
+		Circle d = new Circle(0.0, 0.0, 20.0);
+		System.out.println(c.area());
+		System.out.println(d.area());
+		System.out.println(c.diameter());
+		System.out.println(c.circumference());
+		System.out.println(c.circleSum(c, d));
+		System.out.println(c.circleDifference(c, d));
+		if (c.circleCompare(c, d)==true) {
+			System.out.println("Circle 1 is greater");
+		}
+		else {
+			System.out.println("Circle 2 is greater");
+		}
+	}
+}
