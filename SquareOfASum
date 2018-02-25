@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+
+public class homework_square_sum {
+
+	public static void main(String[] args) {
+
+		System.out.println("Please input n of the sigma sequence");
+		Scanner input = new Scanner(System.in);
+		int n = input.nextInt();
+		int k = 1;
+		
+		int a = (k*k);
+		k = k + 1;
+		
+		while (k<n + 1) {
+			a = ((k*k) + a);
+			k = k + 1;
+		}
+		
+		System.out.println(a);
+		
+	}
+
+}
