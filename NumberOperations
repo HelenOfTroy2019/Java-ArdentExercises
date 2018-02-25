@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+
+public class numeric_operations {
+
+	public static void main(String[] args) {
+
+		Scanner input = new Scanner(System.in);
+		int firstInput = input.nextInt();
+		int secondInput = input.nextInt();
+		
+		System.out.println(firstInput + secondInput);
+		System.out.println(firstInput - secondInput);
+		System.out.println("The product is:" + firstInput * secondInput);
+		System.out.println(firstInput / secondInput);
+		System.out.println(firstInput % secondInput);
+		
+	}
+
+}
