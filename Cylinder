@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+
+public class homework_cylinder {
+
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in);
+		System.out.println("What is the radius?");
+		int radiusInput = input.nextInt();
+		System.out.println("What is the length?");
+		int lengthInput = input.nextInt();
+
+		
+		
+		System.out.print("The surface area is ");
+		System.out.println((2*radiusInput*radiusInput*3.14159) + (2*3.14159*radiusInput));
+		System.out.print("The volume is ");
+		System.out.println((3.14159*radiusInput*radiusInput)*lengthInput);
+		
+	}
+
+}
