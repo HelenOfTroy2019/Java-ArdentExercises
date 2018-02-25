@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+
+public class homework_fibonacci_numbers {
+
+	public static void main(String[] args) {
+
+		int a = 1;
+		int b = 1;
+		int c;
+		int d = 0;
+		
+		Scanner input = new Scanner(System.in);
+		System.out.print("How many numbers of the Fibonacci sequance would you like?");
+		int sequenceLength = input.nextInt();
+		
+		
+		while (d<sequenceLength) {
+			System.out.println(a);
+			c = a + b;
+			a = b;
+			b = c;
+			d = d + 1;
+			
+			
+		}
+	}
+
+}
